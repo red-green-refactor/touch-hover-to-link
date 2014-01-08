@@ -1,3 +1,11 @@
+/*!
+ * jQuery touch-hover-to-link plugin
+ * Original author: @mwitekdesign
+ * Further changes, comments: https://github.com/red-green-refactor/touch-hover-to-link
+ * Licensed under the MIT license
+ */
+
+
 var $, isTouchDevice;
 
 $ = jQuery;
