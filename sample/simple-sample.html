@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="simple-sample.css">
+  <title>Sample of touch-hover-to-link.js</title>
+</head>
+<body>
+<div id="navmenu">
+  <ul class="dropdown-menu top-level" role="menu" aria-labelledby="dropdownMenu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#" class="top-level-link">link to all</a>
+      <ul class="dropdown-menu">
+        <li><a tabindex="-1" href="#">Second level</a></li>
+        <li class="dropdown-submenu">
+          <a href="#" class="top-level-link">link to all</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">3rd level</a></li>
+            <li><a href="#">3rd level</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Second level</a></li>
+        <li><a href="#">Second level</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="../touch-hover-to-link.js"></script>
+
+  <script type="text/javascript">
+    $('.top-level-link').touchHoverToLink();
+  </script>
+</body>
+</html>
